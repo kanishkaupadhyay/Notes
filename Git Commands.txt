@@ -1,0 +1,86 @@
+Git is a version control system
+- git client server architecture
+- SSH and HTTPS are popular ways of connecting to git server
+- Install git bash
+    - https://git-scm.com/download/win
+
+- Help and Version Command
+        git --help
+        git --version
+
+- Config command
+        git config --global user.name "Kanishka Upadhyay"
+        git config --global user.email "kanishkaupadhyay199@gmail.com"
+
+- Some cmd commands for working with folders
+    Make Directory:      mkdir <dir>
+    Remove Directory:    rm <dir>
+    Change Directory:    cd <path>
+    Clear Console:       clear
+    Make a File (f1):    touch f1.txt
+
+- Initialize an empty repository
+        git init
+
+    - .git folder is created inside the folder
+    - git creates a default branch called master which is shown in brackets
+
+- Check the status of git repository
+        git status
+
+    - files which are untracked are shown here
+
+- Add all to the git repository
+        git add .
+
+- Unstage a files from index (no longer tracked)
+        git rm --cached <file>
+
+- Commit changes
+        git commit -m "Commit Message"
+
+- Check all the commits
+        git log
+    
+- Connect local repository to server url
+        git remote add origin https://github.com/kanishkaupadhyay/FirstRepo.git
+        git remote -v
+
+- Push the repository for the first time
+        git push -u origin master
+
+    - (-u) for upstream
+
+- Push existing repository
+        git push origin master
+
+- Clone a remote repository
+        git clone https://github.com/kanishkaupadhyay/SecondRepo.git
+
+- Reset commit but changes still exists
+        git reset --soft <commitID>
+
+- Remove some commit the safe way
+        git revert <commitID>
+
+    - This will create one more commit and delete the change made in the commit to be reverted
+    - The commit chain is not broken in this way
+
+- Create a branch and see all branches
+        git branch <branch>
+        git branch -av
+
+- Hop to another branch
+        git checkout <branch>
+
+- Merge the branch to the current one
+        git merge <branch>
+
+- Delete a branch on local maching
+        git branch -D <branch>
+
+    - After successfully working with your branch you can merge it and delete it
+    - Before deleting, make sure you are not currently on the branch you are deleting
+
+- Delete a branch on the server
+        git push origin --delete <branch>
