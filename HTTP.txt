@@ -1,0 +1,62 @@
+HTTP - Hyper Text Transfer Protocol
+
+-> Communication between web servers and clients
+-> HTTP requests/responses
+-> Loading pages, form submit, ajax calls
+
+HTTP is stateless
+-> Every request is completely independent
+-> Similar to transactions
+-> Programming, Local Storage, Cookies, Sessions are used to create enhanced user experience
+
+HTTPS - Hyper Text Transfer Protocol Secure
+
+-> Data sent is encrypted
+-> SSL/TSL (Secure Socket Layer/Transport Security Layer)
+-> Install certificate on web host
+
+HTTP Methods
+
+GET    - Retrieves data from the server
+POST   - Submit data to the server
+PUT    - Update data already on the server
+DELETE - Deletes data from the server
+
+HTTP Header Fields
+They are categorized into 3
+1. General  - Request URL, Request Method, Status Code, Remote Address, Referrer Policy.
+2. Response - Server, Set-Cookie, Content-Type, Content-Length, Date
+3. Request  - Cookie, Content-Type, Content-Length, Authorization, User-Agent, Referrer, Accept-xxxx
+
+HTTP Status Codes
+
+1xx: Informational
+-> Request received/processing
+
+2xx: Success
+-> Successfully received, understood and accepted
+
+3xx: Redirect
+-> Further action must be taken/redirect
+
+4xx: Client error
+-> Request doesn't have what it needs
+
+5xx: Server Error 
+-> Server Failed to fulfill an apparent valid request
+
+Some common ones are:
+200 - OK
+201 - OK created
+301 - Moved to a new URL
+304 - Not modified (Cached Version)
+400 - Bad Request
+401 - Unauthorized
+404 - Not Found
+500 - Internal Server Error
+
+HTTP/2
+
+-> Major revision of HTTP/1.1
+-> Reduced Latency, Fast, efficient and secure
+-> Respond with more data
