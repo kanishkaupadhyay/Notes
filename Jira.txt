@@ -1,0 +1,71 @@
+Versions of Jira
+
+- Jira Software: Issue tracking and agile project management.
+- Jira Align: Jira at an enterprise scale.
+- Jira Work Management: A non-dev version of Jira.
+- Jira Service Management: Service desk functionality in Jira.
+
+Jira Software on Cloud
+
+# What is Jira?
+- Jira is a project management and issue tracking tool.
+- The teams which uses agile methodology.
+
+# Basics of Agile methodology
+
+- Agile is a software development methodology that is centered around helping teams get more stuff done by seld-organizing their work.
+- Agile is ever-evolving and changing. It's about contantly imporving as a team.
+
+# Agile Board
+
+- Steps you need to get the project done.
+- TO DO, In Progress, done
+
+# Agile
+
+1. Scrum
+
+- Scrum has sprint.
+
+2. Kanban
+- Kanban does not have a sprint.
+
+# Sprint
+A sprint is a pre-determined amount of time where teams determine the wrok to get done.
+
+# Key Agile Terms
+
+1. User Story
+- As a < type of user >
+- I want < some goal >
+- so that < some reason >
+
+2. Epic/Features
+- An epic is a story that is too big for a single sprint. It is broken donw into multiple user stories.
+- When those stories are done, the epic is complete.
+
+# Jira Terms
+
+1.  Issues and Projects
+
+- Issues are containers for fields.
+- Fields hold the data
+    a. Description
+    b. Summary
+    c. Assignee
+    d. Due Date
+
+- Projects are container for Issues
+
+# Team managed projects vs Company managed projects
+
+- Team managed project do not require admin permissions to create.
+- All entities lives inside the project.
+- Things like issue types, status, resolutions etc.
+- Project scope entities.
+- No special permissions to create 
+- Fast and easy to set up and maintain.
+
+- A company managed projects require admin permissions to create.
+- Entities can be shared across other company-managed projects.
+
