@@ -132,28 +132,50 @@ Tester checks:
 - Boundary values
 
 ---
+# 5. HTTP Request Structure (What Testers Verify)
+## 5.1 Request Line
+
+POST /api/books HTTP/1.1
+
+5.2 Headers (Critical for API Testing)
+
+Common headers:
+
+| Header        | Purpose                  |
+| ------------- | ------------------------ |
+| Content-Type  | Format of request body   |
+| Accept        | Expected response format |
+| Authorization | Authentication token     |
+| Cache-Control | Caching behavior         |
+| User-Agent    | Client identity          |
 
 ## 6. HTTP Response
 
 ### 6.1 Status Codes
+6.1 Status Codes (VERY IMPORTANT)
 
-| Code | Meaning |
-|-----|--------|
-| 200 | OK |
-| 201 | Created |
-| 204 | No Content |
-| 400 | Bad Request |
-| 401 | Unauthorized |
-| 403 | Forbidden |
-| 404 | Not Found |
-| 409 | Conflict |
-| 422 | Validation Error |
-| 500 | Server Error |
-| 503 | Service Unavailable |
-
+| Code                      | Meaning              | Tester Interpretation   |
+| ------------------------- | -------------------- | ----------------------- |
+| 200 OK                    | Success              | Correct response        |
+| 201 Created               | Resource created     | POST success            |
+| 204 No Content            | Success without body | DELETE success          |
+| 400 Bad Request           | Validation error     | Client issue            |
+| 401 Unauthorized          | No auth              | Missing/invalid token   |
+| 403 Forbidden             | No permission        | Role-based access       |
+| 404 Not Found             | Resource missing     | Invalid ID              |
+| 409 Conflict              | Duplicate            | Unique constraint       |
+| 422 Unprocessable Entity  | Semantic error       | Business rule violation |
+| 500 Internal Server Error | Backend failure      | Critical defect         |
+| 503 Service Unavailable   | Downtime             | Availability issue      |
 ---
 
 ### 6.2 Response Headers
+
+
+
+
+
+Common headers:
 
 - Content-Type
 - Date
